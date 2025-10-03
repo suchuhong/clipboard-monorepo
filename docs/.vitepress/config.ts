@@ -5,6 +5,10 @@ export default defineConfig({
   description: "Tiny React clipboard utilities",
   lang: "en-US",
   base: "/",
+  ignoreDeadLinks: [
+    // Ignore storybook links as they are generated after docs build
+    /^\/storybook\//,
+  ],
   themeConfig: {
     search: {
       provider: "algolia",
