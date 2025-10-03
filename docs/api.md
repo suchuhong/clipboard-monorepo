@@ -141,7 +141,7 @@ All components and hooks use the modern Clipboard API (`navigator.clipboard`):
 - ✅ Safari 13.1+
 - ✅ Opera 53+
 
-**Note:** The Clipboard API requires a secure context (HTTPS or localhost).
+**Note:** The [Clipboard](https://silksong.fun/) API requires a [secure](https://chiikawapuzzle.space/) context (HTTPS or localhost).
 
 ---
 
