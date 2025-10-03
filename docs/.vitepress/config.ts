@@ -8,6 +8,12 @@ export default defineConfig({
   ignoreDeadLinks: [
     // Ignore storybook links as they are generated after docs build
     /^\/storybook\//,
+    // Ignore links to root README files (outside docs directory)
+    /\.\.\/README/,
+    /\.\.\/\.\.\/README/,
+    // Ignore relative links to other docs
+    /\.\/docs\//,
+    /\.\/\.\.\/docs\//,
   ],
   themeConfig: {
     search: {
