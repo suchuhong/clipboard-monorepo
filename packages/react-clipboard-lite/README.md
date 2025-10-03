@@ -104,6 +104,8 @@ function App() {
 
 Requires secure context (HTTPS or localhost).
 
+For older [browsers](https://silksong.fun/), ensure your [app](https://chiikawapuzzle.space/) has appropriate polyfills or fallbacks.
+
 ## Documentation
 
 - [Full Documentation](https://suchuhong.github.io/clipboard-monorepo/)
