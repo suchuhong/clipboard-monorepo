@@ -1,8 +1,29 @@
 # such-clipboard-monorepo
 
-Monorepo for `@such/react-clipboard-lite` with a Vite demo app and Storybook.
+[![CI](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml)
+[![Pages](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml)
+[![npm version](https://img.shields.io/npm/v/@such/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such/react-clipboard-lite)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Monorepo for `@such/react-clipboard-lite` - a lightweight React clipboard library with components and hooks.
 
 English | [简体中文](./README.zh-CN.md)
+
+## 📦 What's Inside
+
+- **[@such/react-clipboard-lite](./packages/react-clipboard-lite)** - Core library with React components and hooks
+- **[vite-demo](./apps/vite-demo)** - Demo application showcasing all features
+- **[Documentation](https://suchuhong.github.io/clipboard-monorepo/)** - Full documentation site built with VitePress
+- **[Storybook](https://suchuhong.github.io/clipboard-monorepo/storybook/)** - Interactive component examples
+
+## ✨ Features
+
+- 🚀 Modern Clipboard API with automatic fallbacks
+- 📦 Tiny bundle size, zero dependencies
+- 🎯 TypeScript support with full type definitions
+- ♿ Accessible and user-friendly
+- 🧪 Fully tested with Vitest + Testing Library + Playwright
+- 📖 Comprehensive documentation and examples
 
 ## Prerequisites
 
@@ -103,10 +124,36 @@ pnpm run release
 
 ## Documentation
 
-- 本地文档：`pnpm run docs:dev`（VitePress）
-- 构建文档并集成 Storybook：`pnpm run docs:build:with-sb`
-- 预览构建：`pnpm run docs:preview`
-- 部署：推送到 `main` 触发 `pages.yml`，GitHub Pages 将发布文档；Storybook 可在 `/storybook/` 路径访问
+### 📚 Online Documentation
+
+- **Documentation Site**: https://suchuhong.github.io/clipboard-monorepo/
+- **Storybook**: https://suchuhong.github.io/clipboard-monorepo/storybook/
+- **API Reference**: https://suchuhong.github.io/clipboard-monorepo/api
+
+### 🛠️ Local Development
+
+```bash
+# Start documentation dev server
+pnpm run docs:dev
+
+# Build documentation with Storybook
+pnpm run docs:build:with-sb
+
+# Preview built documentation
+pnpm run docs:preview
+```
+
+### 🚀 GitHub Pages Deployment
+
+Documentation is automatically deployed to GitHub Pages when code is pushed to `main` branch.
+
+**Setup GitHub Pages** (first time only):
+
+1. Go to [Repository Settings → Pages](https://github.com/suchuhong/clipboard-monorepo/settings/pages)
+2. Set **Source** to `GitHub Actions`
+3. Set **Workflow permissions** to `Read and write permissions` in [Actions Settings](https://github.com/suchuhong/clipboard-monorepo/settings/actions)
+
+See [GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md) for detailed setup instructions.
 
 ## Commit 规范
 
@@ -169,10 +216,44 @@ such-clipboard-monorepo/
 - **Documentation**: VitePress + Storybook
 - **CI/CD**: GitHub Actions
 
-## Links
+## 📚 Additional Documentation
 
-- [GitHub Repository](https://github.com/suchuhong/clipboard-monorepo)
-- [Documentation](https://suchuhong.github.io/clipboard-monorepo/)
-- [Storybook](https://suchuhong.github.io/clipboard-monorepo/storybook/)
-- [npm Package](https://www.npmjs.com/package/@such/react-clipboard-lite)
-- [Issues](https://github.com/suchuhong/clipboard-monorepo/issues)
+- [Publishing Guide](./PUBLISHING.md) - Quick guide to publish to npm
+- [Detailed Publishing Docs](./docs/publishing.md) - Complete publishing documentation
+- [Pre-Publish Checklist](./PRE_PUBLISH_CHECKLIST.md) - Checklist before publishing
+- [Contributing Guide](./CONTRIBUTING.md) - How to contribute to this project
+- [GitHub Pages Setup](./GITHUB_PAGES_SETUP.md) - Setup GitHub Pages deployment
+
+## 🔗 Links
+
+- **GitHub Repository**: https://github.com/suchuhong/clipboard-monorepo
+- **Documentation**: https://suchuhong.github.io/clipboard-monorepo/
+- **Storybook**: https://suchuhong.github.io/clipboard-monorepo/storybook/
+- **npm Package**: https://www.npmjs.com/package/@such/react-clipboard-lite
+- **Issues**: https://github.com/suchuhong/clipboard-monorepo/issues
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details on:
+
+- Development workflow
+- Commit message conventions
+- Pull request process
+- Code style guidelines
+
+## 📄 License
+
+MIT © [suchuhong](https://github.com/suchuhong)
+
+## 🙏 Acknowledgments
+
+Built with:
+
+- [React](https://react.dev/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Vite](https://vitejs.dev/) - Build tool
+- [VitePress](https://vitepress.dev/) - Documentation
+- [Storybook](https://storybook.js.org/) - Component development
+- [Vitest](https://vitest.dev/) - Unit testing
+- [Playwright](https://playwright.dev/) - E2E testing
+- [pnpm](https://pnpm.io/) - Package manager

@@ -1,8 +1,29 @@
 # such-clipboard-monorepo
 
-`@such/react-clipboard-lite` 的 Monorepo 项目，包含 Vite 演示应用和 Storybook。
+[![CI](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml)
+[![Pages](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml)
+[![npm version](https://img.shields.io/npm/v/@such/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such/react-clipboard-lite)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+`@such/react-clipboard-lite` 的 Monorepo 项目 - 一个轻量级的 React 剪贴板库，提供组件和 Hooks。
 
 [English](./README.md) | 简体中文
+
+## 📦 项目内容
+
+- **[@such/react-clipboard-lite](./packages/react-clipboard-lite)** - 核心库，包含 React 组件和 Hooks
+- **[vite-demo](./apps/vite-demo)** - 演示应用，展示所有功能
+- **[文档站点](https://suchuhong.github.io/clipboard-monorepo/)** - 使用 VitePress 构建的完整文档
+- **[Storybook](https://suchuhong.github.io/clipboard-monorepo/storybook/)** - 交互式组件示例
+
+## ✨ 特性
+
+- 🚀 现代 Clipboard API，自动降级支持
+- 📦 极小的包体积，零依赖
+- 🎯 完整的 TypeScript 类型支持
+- ♿ 无障碍访问友好
+- 🧪 完整测试覆盖（Vitest + Testing Library + Playwright）
+- 📖 详尽的文档和示例
 
 ## 环境要求
 
@@ -103,10 +124,36 @@ pnpm run release
 
 ## 文档
 
-- 本地文档服务器：`pnpm run docs:dev`（VitePress）
-- 构建文档并集成 Storybook：`pnpm run docs:build:with-sb`
-- 预览构建结果：`pnpm run docs:preview`
-- 部署：推送到 `main` 分支会触发 `pages.yml`，GitHub Pages 将发布文档；Storybook 可在 `/storybook/` 路径访问
+### 📚 在线文档
+
+- **文档站点**: https://suchuhong.github.io/clipboard-monorepo/
+- **Storybook**: https://suchuhong.github.io/clipboard-monorepo/storybook/
+- **API 参考**: https://suchuhong.github.io/clipboard-monorepo/api
+
+### 🛠️ 本地开发
+
+```bash
+# 启动文档开发服务器
+pnpm run docs:dev
+
+# 构建文档（包含 Storybook）
+pnpm run docs:build:with-sb
+
+# 预览构建结果
+pnpm run docs:preview
+```
+
+### 🚀 GitHub Pages 部署
+
+当代码推送到 `main` 分支时，文档会自动部署到 GitHub Pages。
+
+**首次设置 GitHub Pages**：
+
+1. 访问 [仓库设置 → Pages](https://github.com/suchuhong/clipboard-monorepo/settings/pages)
+2. 将 **Source** 设置为 `GitHub Actions`
+3. 在 [Actions 设置](https://github.com/suchuhong/clipboard-monorepo/settings/actions)中将 **Workflow permissions** 设置为 `Read and write permissions`
+
+详细设置说明请查看 [GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md)。
 
 ## 提交规范
 
@@ -230,10 +277,44 @@ such-clipboard-monorepo/
 
 [MIT](./LICENSE)
 
-## 相关链接
+## 📚 其他文档
 
-- [GitHub 仓库](https://github.com/suchuhong/clipboard-monorepo)
-- [文档站点](https://suchuhong.github.io/clipboard-monorepo/)
-- [Storybook](https://suchuhong.github.io/clipboard-monorepo/storybook/)
-- [npm 包](https://www.npmjs.com/package/@such/react-clipboard-lite)
-- [问题反馈](https://github.com/suchuhong/clipboard-monorepo/issues)
+- [发布指南](./PUBLISHING.md) - npm 发布快速指南
+- [详细发布文档](./docs/publishing.md) - 完整的发布文档
+- [发布前检查清单](./PRE_PUBLISH_CHECKLIST.md) - 发布前的检查项目
+- [贡献指南](./CONTRIBUTING.md) - 如何为项目做贡献
+- [GitHub Pages 设置](./GITHUB_PAGES_SETUP.md) - GitHub Pages 部署设置
+
+## 🔗 相关链接
+
+- **GitHub 仓库**: https://github.com/suchuhong/clipboard-monorepo
+- **文档站点**: https://suchuhong.github.io/clipboard-monorepo/
+- **Storybook**: https://suchuhong.github.io/clipboard-monorepo/storybook/
+- **npm 包**: https://www.npmjs.com/package/@such/react-clipboard-lite
+- **问题反馈**: https://github.com/suchuhong/clipboard-monorepo/issues
+
+## 🤝 贡献
+
+欢迎贡献！请阅读我们的[贡献指南](./CONTRIBUTING.md)了解：
+
+- 开发工作流程
+- 提交信息规范
+- Pull Request 流程
+- 代码风格指南
+
+## 📄 许可证
+
+MIT © [suchuhong](https://github.com/suchuhong)
+
+## 🙏 致谢
+
+本项目使用以下优秀工具构建：
+
+- [React](https://react.dev/) - UI 库
+- [TypeScript](https://www.typescriptlang.org/) - 类型安全
+- [Vite](https://vitejs.dev/) - 构建工具
+- [VitePress](https://vitepress.dev/) - 文档工具
+- [Storybook](https://storybook.js.org/) - 组件开发
+- [Vitest](https://vitest.dev/) - 单元测试
+- [Playwright](https://playwright.dev/) - E2E 测试
+- [pnpm](https://pnpm.io/) - 包管理器
