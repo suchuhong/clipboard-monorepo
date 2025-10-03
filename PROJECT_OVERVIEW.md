@@ -14,7 +14,7 @@ Create a lightweight, well-tested, and fully documented React clipboard library 
 
 ## 📦 Packages
 
-### @such/react-clipboard-lite
+### @such12138/react-clipboard-lite
 
 **Location**: `packages/react-clipboard-lite/`
 

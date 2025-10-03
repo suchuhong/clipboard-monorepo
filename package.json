@@ -6,8 +6,8 @@
   "scripts": {
     "build": "pnpm -r run build",
     "test": "pnpm -r run test",
-    "storybook": "pnpm --filter @such/react-clipboard-lite run storybook",
-    "build-storybook": "pnpm --filter @such/react-clipboard-lite run build-storybook",
+    "storybook": "pnpm --filter @such12138/react-clipboard-lite run storybook",
+    "build-storybook": "pnpm --filter @such12138/react-clipboard-lite run build-storybook",
     "lint": "eslint . --ext .ts,.tsx,.js,.cjs,.mts,.cts",
     "ci": "pnpm install --frozen-lockfile && pnpm run build && pnpm test",
     "format": "prettier -w .",
@@ -19,7 +19,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "docs:build:with-sb": "pnpm --filter @such/react-clipboard-lite run build-storybook && vitepress build docs && node scripts/merge-storybook-into-docs.mjs"
+    "docs:build:with-sb": "pnpm --filter @such12138/react-clipboard-lite run build-storybook && vitepress build docs && node scripts/merge-storybook-into-docs.mjs"
   },
   "engines": {
     "node": ">=18.0.0"

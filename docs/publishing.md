@@ -1,6 +1,6 @@
 # 发布到 npm
 
-本指南介绍如何将 `@such/react-clipboard-lite` 发布到 npm 仓库。
+本指南介绍如何将 `@such12138/react-clipboard-lite` 发布到 npm 仓库。
 
 ## 前置准备
 
@@ -49,7 +49,7 @@ pnpm run format
 
 ```bash
 # 构建库
-pnpm --filter @such/react-clipboard-lite run build
+pnpm --filter @such12138/react-clipboard-lite run build
 ```
 
 构建后会在 `packages/react-clipboard-lite/dist/` 生成：
@@ -102,7 +102,7 @@ git push
 pnpm run release
 
 # 或手动发布单个包
-pnpm --filter @such/react-clipboard-lite publish --access public
+pnpm --filter @such12138/react-clipboard-lite publish --access public
 ```
 
 **注意**：首次发布 scoped 包（如 `@such/xxx`）需要添加 `--access public`。
@@ -266,16 +266,16 @@ jobs:
 
 ```bash
 # 发布 beta 版本
-pnpm --filter @such/react-clipboard-lite publish --tag beta
+pnpm --filter @such12138/react-clipboard-lite publish --tag beta
 
 # 发布 alpha 版本
-pnpm --filter @such/react-clipboard-lite publish --tag alpha
+pnpm --filter @such12138/react-clipboard-lite publish --tag alpha
 ```
 
 用户安装：
 
 ```bash
-npm install @such/react-clipboard-lite@beta
+npm install @such12138/react-clipboard-lite@beta
 ```
 
 ## 发布检查清单
@@ -354,7 +354,7 @@ pnpm run build
 
 ### 1. 检查 npm 网站
 
-访问：`https://www.npmjs.com/package/@such/react-clipboard-lite`
+访问：`https://www.npmjs.com/package/@such12138/react-clipboard-lite`
 
 确认：
 
@@ -369,16 +369,16 @@ pnpm run build
 mkdir test-install
 cd test-install
 npm init -y
-npm install @such/react-clipboard-lite
+npm install @such12138/react-clipboard-lite
 
 # 检查安装的文件
-ls node_modules/@such/react-clipboard-lite/
+ls node_modules/@such12138/react-clipboard-lite/
 ```
 
 ### 3. 测试导入
 
 ```tsx
-import { CopyButton, CopyOnClick, useClipboard } from "@such/react-clipboard-lite";
+import { CopyButton, CopyOnClick, useClipboard } from "@such12138/react-clipboard-lite";
 
 // 确保类型定义正常
 const button: typeof CopyButton = CopyButton;
@@ -391,13 +391,13 @@ const button: typeof CopyButton = CopyButton;
 ### 方法 1：废弃版本（推荐）
 
 ```bash
-npm deprecate @such/react-clipboard-lite@1.2.3 "This version has critical bugs, please upgrade to 1.2.4"
+npm deprecate @such12138/react-clipboard-lite@1.2.3 "This version has critical bugs, please upgrade to 1.2.4"
 ```
 
 ### 方法 2：取消发布（24小时内）
 
 ```bash
-npm unpublish @such/react-clipboard-lite@1.2.3
+npm unpublish @such12138/react-clipboard-lite@1.2.3
 ```
 
 **注意**：

@@ -1,4 +1,4 @@
-# @such/react-clipboard-lite
+# @such12138/react-clipboard-lite
 
 Lightweight React components and hooks for clipboard operations with modern API support.
 
@@ -14,11 +14,11 @@ Lightweight React components and hooks for clipboard operations with modern API 
 ## Quick Start
 
 ```bash
-npm install @such/react-clipboard-lite
+npm install @such12138/react-clipboard-lite
 # or
-pnpm add @such/react-clipboard-lite
+pnpm add @such12138/react-clipboard-lite
 # or
-yarn add @such/react-clipboard-lite
+yarn add @such12138/react-clipboard-lite
 ```
 
 ## Components
@@ -28,9 +28,9 @@ yarn add @such/react-clipboard-lite
 A button component that copies text to clipboard with visual feedback.
 
 ```tsx
-import { CopyButton } from "@such/react-clipboard-lite";
+import { CopyButton } from "@such12138/react-clipboard-lite";
 
-<CopyButton text="npm install @such/react-clipboard-lite">Copy Install Command</CopyButton>;
+<CopyButton text="npm install @such12138/react-clipboard-lite">Copy Install Command</CopyButton>;
 ```
 
 ### CopyOnClick
@@ -38,7 +38,7 @@ import { CopyButton } from "@such/react-clipboard-lite";
 A wrapper component that copies text when clicked.
 
 ```tsx
-import { CopyOnClick } from "@such/react-clipboard-lite";
+import { CopyOnClick } from "@such12138/react-clipboard-lite";
 
 <CopyOnClick text="Hello World">
   <code>Click to copy</code>
@@ -50,7 +50,7 @@ import { CopyOnClick } from "@such/react-clipboard-lite";
 A React hook for programmatic clipboard operations.
 
 ```tsx
-import { useClipboard } from "@such/react-clipboard-lite";
+import { useClipboard } from "@such12138/react-clipboard-lite";
 
 function MyComponent() {
   const { copy, isCopying, error } = useClipboard();

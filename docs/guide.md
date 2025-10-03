@@ -3,11 +3,11 @@
 ## Installation
 
 ```bash
-npm install @such/react-clipboard-lite
+npm install @such12138/react-clipboard-lite
 # or
-pnpm add @such/react-clipboard-lite
+pnpm add @such12138/react-clipboard-lite
 # or
-yarn add @such/react-clipboard-lite
+yarn add @such12138/react-clipboard-lite
 ```
 
 ## Basic Usage
@@ -15,7 +15,7 @@ yarn add @such/react-clipboard-lite
 ### Import Components
 
 ```tsx
-import { CopyButton, CopyOnClick, useClipboard } from "@such/react-clipboard-lite";
+import { CopyButton, CopyOnClick, useClipboard } from "@such12138/react-clipboard-lite";
 ```
 
 ### CopyButton Component
@@ -26,7 +26,7 @@ The `CopyButton` component renders a button that copies text to the clipboard.
 function App() {
   return (
     <CopyButton
-      text="npm install @such/react-clipboard-lite"
+      text="npm install @such12138/react-clipboard-lite"
       onCopied={() => console.log("Copied!")}
     >
       Copy Command
@@ -100,7 +100,7 @@ import type {
   CopyButtonProps,
   CopyOnClickProps,
   UseClipboardOptions,
-} from "@such/react-clipboard-lite";
+} from "@such12138/react-clipboard-lite";
 ```
 
 ## Browser Support

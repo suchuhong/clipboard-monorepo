@@ -12,7 +12,7 @@
 ## ✅ 包配置
 
 - [ ] `package.json` 包含正确的元数据
-  - [ ] name: `@such/react-clipboard-lite`
+  - [ ] name: `@such12138/react-clipboard-lite`
   - [ ] version: 遵循语义化版本
   - [ ] description: 清晰的描述
   - [ ] keywords: 相关关键词
@@ -57,7 +57,7 @@
 验证构建：
 
 ```bash
-pnpm --filter @such/react-clipboard-lite run build
+pnpm --filter @such12138/react-clipboard-lite run build
 ls -la packages/react-clipboard-lite/dist/
 ```
 
@@ -70,7 +70,7 @@ ls -la packages/react-clipboard-lite/dist/
 检查包名：
 
 ```bash
-npm view @such/react-clipboard-lite
+npm view @such12138/react-clipboard-lite
 # 如果返回 404，说明包名可用
 ```
 
@@ -115,7 +115,7 @@ npm view @such/react-clipboard-lite
 1. 构建包：
 
    ```bash
-   pnpm --filter @such/react-clipboard-lite run build
+   pnpm --filter @such12138/react-clipboard-lite run build
    ```
 
 2. 创建 changeset：
@@ -141,7 +141,7 @@ npm view @such/react-clipboard-lite
 5. 发布到 npm：
 
    ```bash
-   pnpm --filter @such/react-clipboard-lite publish --access public
+   pnpm --filter @such12138/react-clipboard-lite publish --access public
    ```
 
 6. 推送标签：
@@ -151,7 +151,7 @@ npm view @such/react-clipboard-lite
 
 ## ✅ 发布后验证
 
-- [ ] 包在 npm 上可见：https://www.npmjs.com/package/@such/react-clipboard-lite
+- [ ] 包在 npm 上可见：https://www.npmjs.com/package/@such12138/react-clipboard-lite
 - [ ] 版本号正确
 - [ ] README 显示正常
 - [ ] 文件列表完整
@@ -162,13 +162,13 @@ npm view @such/react-clipboard-lite
 mkdir test-install
 cd test-install
 npm init -y
-npm install @such/react-clipboard-lite
+npm install @such12138/react-clipboard-lite
 ```
 
 测试导入：
 
 ```javascript
-const { CopyButton, CopyOnClick, useClipboard } = require("@such/react-clipboard-lite");
+const { CopyButton, CopyOnClick, useClipboard } = require("@such12138/react-clipboard-lite");
 console.log("Import successful!", { CopyButton, CopyOnClick, useClipboard });
 ```
 
@@ -179,7 +179,7 @@ console.log("Import successful!", { CopyButton, CopyOnClick, useClipboard });
 1. 使用 `--access public` 标志：
 
    ```bash
-   pnpm --filter @such/react-clipboard-lite publish --access public
+   pnpm --filter @such12138/react-clipboard-lite publish --access public
    ```
 
 2. 或在 package.json 中设置：

@@ -2,16 +2,16 @@
 
 [![CI](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml)
 [![Pages](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml)
-[![npm version](https://img.shields.io/npm/v/@such/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such/react-clipboard-lite)
+[![npm version](https://img.shields.io/npm/v/@such12138/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such12138/react-clipboard-lite)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Monorepo for `@such/react-clipboard-lite` - a lightweight React clipboard library with components and hooks.
+Monorepo for `@such12138/react-clipboard-lite` - a lightweight React clipboard library with components and hooks.
 
 English | [简体中文](./README.zh-CN.md)
 
 ## 📦 What's Inside
 
-- **[@such/react-clipboard-lite](./packages/react-clipboard-lite)** - Core library with React components and hooks
+- **[@such12138/react-clipboard-lite](./packages/react-clipboard-lite)** - Core library with React components and hooks
 - **[vite-demo](./apps/vite-demo)** - Demo application showcasing all features
 - **[Documentation](https://suchuhong.github.io/clipboard-monorepo/)** - Full documentation site built with VitePress
 - **[Storybook](https://suchuhong.github.io/clipboard-monorepo/storybook/)** - Interactive component examples
@@ -54,7 +54,7 @@ pnpm install
 pnpm run dev
 
 # Watch mode for library development
-pnpm --filter @such/react-clipboard-lite run dev
+pnpm --filter @such12138/react-clipboard-lite run dev
 ```
 
 ## Build & Test
@@ -67,7 +67,7 @@ pnpm run build
 pnpm test
 
 # Run tests in watch mode
-pnpm --filter @such/react-clipboard-lite run test:watch
+pnpm --filter @such12138/react-clipboard-lite run test:watch
 ```
 
 ## Code Quality
@@ -229,7 +229,7 @@ such-clipboard-monorepo/
 - **GitHub Repository**: https://github.com/suchuhong/clipboard-monorepo
 - **Documentation**: https://suchuhong.github.io/clipboard-monorepo/
 - **Storybook**: https://suchuhong.github.io/clipboard-monorepo/storybook/
-- **npm Package**: https://www.npmjs.com/package/@such/react-clipboard-lite
+- **npm Package**: https://www.npmjs.com/package/@such12138/react-clipboard-lite
 - **Issues**: https://github.com/suchuhong/clipboard-monorepo/issues
 
 ## 🤝 Contributing

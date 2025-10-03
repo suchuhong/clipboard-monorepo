@@ -31,7 +31,7 @@ pnpm login
 ### 2️⃣ 构建包
 
 ```bash
-pnpm --filter @such/react-clipboard-lite run build
+pnpm --filter @such12138/react-clipboard-lite run build
 ```
 
 ### 3️⃣ 创建 changeset
@@ -42,7 +42,7 @@ pnpm run changeset
 
 选择：
 
-- 包：`@such/react-clipboard-lite`
+- 包：`@such12138/react-clipboard-lite`
 - 版本类型：`minor`（首次发布建议用 minor 或 patch）
 - 描述：`initial release`
 
@@ -55,17 +55,17 @@ pnpm run version-packages
 ### 5️⃣ 发布
 
 ```bash
-pnpm --filter @such/react-clipboard-lite publish
+pnpm --filter @such12138/react-clipboard-lite publish
 ```
 
 ## ✅ 验证发布
 
-访问：https://www.npmjs.com/package/@such/react-clipboard-lite
+访问：https://www.npmjs.com/package/@such12138/react-clipboard-lite
 
 测试安装：
 
 ```bash
-npm install @such/react-clipboard-lite
+npm install @such12138/react-clipboard-lite
 ```
 
 ## 🔄 后续发布

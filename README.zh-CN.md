@@ -2,16 +2,16 @@
 
 [![CI](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/ci.yml)
 [![Pages](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml/badge.svg)](https://github.com/suchuhong/clipboard-monorepo/actions/workflows/pages.yml)
-[![npm version](https://img.shields.io/npm/v/@such/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such/react-clipboard-lite)
+[![npm version](https://img.shields.io/npm/v/@such12138/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such12138/react-clipboard-lite)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-`@such/react-clipboard-lite` 的 Monorepo 项目 - 一个轻量级的 React 剪贴板库，提供组件和 Hooks。
+`@such12138/react-clipboard-lite` 的 Monorepo 项目 - 一个轻量级的 React 剪贴板库，提供组件和 Hooks。
 
 [English](./README.md) | 简体中文
 
 ## 📦 项目内容
 
-- **[@such/react-clipboard-lite](./packages/react-clipboard-lite)** - 核心库，包含 React 组件和 Hooks
+- **[@such12138/react-clipboard-lite](./packages/react-clipboard-lite)** - 核心库，包含 React 组件和 Hooks
 - **[vite-demo](./apps/vite-demo)** - 演示应用，展示所有功能
 - **[文档站点](https://suchuhong.github.io/clipboard-monorepo/)** - 使用 VitePress 构建的完整文档
 - **[Storybook](https://suchuhong.github.io/clipboard-monorepo/storybook/)** - 交互式组件示例
@@ -54,7 +54,7 @@ pnpm install
 pnpm run dev
 
 # 库开发的监听模式
-pnpm --filter @such/react-clipboard-lite run dev
+pnpm --filter @such12138/react-clipboard-lite run dev
 ```
 
 ## 构建与测试
@@ -67,7 +67,7 @@ pnpm run build
 pnpm test
 
 # 监听模式运行测试
-pnpm --filter @such/react-clipboard-lite run test:watch
+pnpm --filter @such12138/react-clipboard-lite run test:watch
 ```
 
 ## 代码质量
@@ -290,7 +290,7 @@ such-clipboard-monorepo/
 - **GitHub 仓库**: https://github.com/suchuhong/clipboard-monorepo
 - **文档站点**: https://suchuhong.github.io/clipboard-monorepo/
 - **Storybook**: https://suchuhong.github.io/clipboard-monorepo/storybook/
-- **npm 包**: https://www.npmjs.com/package/@such/react-clipboard-lite
+- **npm 包**: https://www.npmjs.com/package/@such12138/react-clipboard-lite
 - **问题反馈**: https://github.com/suchuhong/clipboard-monorepo/issues
 
 ## 🤝 贡献

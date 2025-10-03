@@ -1,9 +1,9 @@
-# @such/react-clipboard-lite
+# @such12138/react-clipboard-lite
 
 Lightweight React components and hooks for clipboard operations with modern API support.
 
-[![npm version](https://img.shields.io/npm/v/@such/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such/react-clipboard-lite)
-[![npm downloads](https://img.shields.io/npm/dm/@such/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such/react-clipboard-lite)
+[![npm version](https://img.shields.io/npm/v/@such12138/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such12138/react-clipboard-lite)
+[![npm downloads](https://img.shields.io/npm/dm/@such12138/react-clipboard-lite.svg)](https://www.npmjs.com/package/@such12138/react-clipboard-lite)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -17,11 +17,11 @@ Lightweight React components and hooks for clipboard operations with modern API 
 ## Installation
 
 ```bash
-npm install @such/react-clipboard-lite
+npm install @such12138/react-clipboard-lite
 # or
-pnpm add @such/react-clipboard-lite
+pnpm add @such12138/react-clipboard-lite
 # or
-yarn add @such/react-clipboard-lite
+yarn add @such12138/react-clipboard-lite
 ```
 
 ## Quick Start
@@ -29,7 +29,7 @@ yarn add @such/react-clipboard-lite
 ### CopyButton Component
 
 ```tsx
-import { CopyButton } from "@such/react-clipboard-lite";
+import { CopyButton } from "@such12138/react-clipboard-lite";
 
 function App() {
   return <CopyButton text="Hello, World!">Copy Text</CopyButton>;
@@ -39,7 +39,7 @@ function App() {
 ### CopyOnClick Component
 
 ```tsx
-import { CopyOnClick } from "@such/react-clipboard-lite";
+import { CopyOnClick } from "@such12138/react-clipboard-lite";
 
 function App() {
   return (
@@ -53,7 +53,7 @@ function App() {
 ### useClipboard Hook
 
 ```tsx
-import { useClipboard } from "@such/react-clipboard-lite";
+import { useClipboard } from "@such12138/react-clipboard-lite";
 
 function App() {
   const { copy, isCopying, error } = useClipboard();
