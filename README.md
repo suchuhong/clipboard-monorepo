@@ -79,26 +79,21 @@ pnpm --filter @such12138/react-clipboard-lite run test:watch
 
 ## Release & Publishing
 
-查看 [发布指南](./PUBLISHING.md) 了解如何发布到 npm。
+See [Quick Start Guide](./docs/guides/QUICK_START.md) for 3-step publishing or [Publishing Guide](./docs/guides/PUBLISHING.md) for detailed instructions.
 
-**首次配置**：
-
-1. 更新 `.changeset/config.json` 中的仓库名称（如果需要 GitHub 链接）
-2. 在 GitHub 仓库添加 `NPM_TOKEN` Secret
-
-**快速发布**：
+**Quick Publish**:
 
 ```bash
-# 1. 创建变更集
+# 1. Create changeset
 pnpm run changeset
 
-# 2. 提交并推送
+# 2. Commit and push
 git add . && git commit -m "chore: add changeset" && git push
 
-# 3. 合并自动创建的 PR（GitHub Actions 会自动发布）
+# 3. Merge auto-created PR (GitHub Actions will publish automatically)
 ```
 
-**手动发布**：
+**Manual Publish**:
 
 ```bash
 pnpm run build
@@ -107,7 +102,7 @@ pnpm run version-packages
 pnpm run release
 ```
 
-详细文档：[docs/publishing.md](./docs/publishing.md)
+Detailed docs: [Publishing Guide](./docs/publishing.md)
 
 ## E2E Testing
 
@@ -153,7 +148,7 @@ Documentation is automatically deployed to GitHub Pages when code is pushed to `
 2. Set **Source** to `GitHub Actions`
 3. Set **Workflow permissions** to `Read and write permissions` in [Actions Settings](https://github.com/suchuhong/clipboard-monorepo/settings/actions)
 
-See [GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md) for detailed setup instructions.
+See [GitHub Pages Setup Guide](./docs/guides/GITHUB_PAGES_SETUP.md) for detailed setup instructions.
 
 ## Commit 规范
 
@@ -216,13 +211,30 @@ such-clipboard-monorepo/
 - **Documentation**: VitePress + Storybook
 - **CI/CD**: GitHub Actions
 
-## 📚 Additional Documentation
+## 📚 Documentation
 
-- [Publishing Guide](./PUBLISHING.md) - Quick guide to publish to npm
-- [Detailed Publishing Docs](./docs/publishing.md) - Complete publishing documentation
-- [Pre-Publish Checklist](./PRE_PUBLISH_CHECKLIST.md) - Checklist before publishing
-- [Contributing Guide](./CONTRIBUTING.md) - How to contribute to this project
-- [GitHub Pages Setup](./GITHUB_PAGES_SETUP.md) - Setup GitHub Pages deployment
+### Quick Links
+
+- [Quick Start](./docs/guides/QUICK_START.md) - Get started in 3 steps
+- [All Guides](./docs/guides/README.md) - Complete guides index
+- [Documentation Structure](./docs/DOCUMENTATION.md) - How documentation is organized
+
+### Main Guides
+
+- [Publishing Guide](./docs/guides/PUBLISHING.md) - Quick guide to publish to npm
+- [Contributing Guide](./docs/guides/CONTRIBUTING.md) - How to contribute to this project
+- [Project Overview](./docs/guides/PROJECT_OVERVIEW.md) - Complete project overview
+
+### Setup & Configuration
+
+- [GitHub Pages Setup](./docs/guides/GITHUB_PAGES_SETUP.md) - Setup GitHub Pages deployment
+- [npm Setup](./docs/guides/NPM_SETUP.md) - npm configuration guide
+
+### Detailed Documentation
+
+- [API Reference](./docs/api.md) - Complete API reference
+- [Usage Guide](./docs/guide.md) - Detailed usage guide
+- [Publishing Documentation](./docs/publishing.md) - Complete publishing documentation
 
 ## 🔗 Links
 
@@ -234,7 +246,7 @@ such-clipboard-monorepo/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) for details on:
+Contributions are welcome! Please read our [Contributing Guide](./docs/guides/CONTRIBUTING.md) for details on:
 
 - Development workflow
 - Commit message conventions

@@ -111,7 +111,7 @@ Works in all modern browsers that support the Clipboard API:
 - Firefox 63+
 - Safari 13.1+
 
-For older browsers, ensure your app has appropriate polyfills or fallbacks.
+For older [browsers](https://silksong.fun/), ensure your [app](https://chiikawapuzzle.space/) has appropriate polyfills or fallbacks.
 
 ## Examples
 

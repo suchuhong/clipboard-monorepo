@@ -79,12 +79,7 @@ pnpm --filter @such12138/react-clipboard-lite run test:watch
 
 ## 发布流程
 
-查看 [发布指南](./PUBLISHING.md) 了解如何发布到 npm。
-
-**首次配置**：
-
-1. 更新 `.changeset/config.json` 中的仓库名称（如需要 GitHub 链接）
-2. 在 GitHub 仓库添加 `NPM_TOKEN` Secret
+查看 [快速开始指南](./docs/guides/QUICK_START.md) 了解 3 步发布流程，或查看 [发布指南](./docs/guides/PUBLISHING.md) 了解详细说明。
 
 **快速发布**：
 
@@ -107,7 +102,7 @@ pnpm run version-packages
 pnpm run release
 ```
 
-详细文档：[docs/publishing.md](./docs/publishing.md)
+详细文档：[发布指南](./docs/publishing.md)
 
 ## E2E 测试
 
@@ -153,7 +148,7 @@ pnpm run docs:preview
 2. 将 **Source** 设置为 `GitHub Actions`
 3. 在 [Actions 设置](https://github.com/suchuhong/clipboard-monorepo/settings/actions)中将 **Workflow permissions** 设置为 `Read and write permissions`
 
-详细设置说明请查看 [GITHUB_PAGES_SETUP.md](./GITHUB_PAGES_SETUP.md)。
+详细设置说明请查看 [GitHub Pages 设置指南](./docs/guides/GITHUB_PAGES_SETUP.md)。
 
 ## 提交规范
 
@@ -277,13 +272,30 @@ such-clipboard-monorepo/
 
 [MIT](./LICENSE)
 
-## 📚 其他文档
+## 📚 文档
 
-- [发布指南](./PUBLISHING.md) - npm 发布快速指南
-- [详细发布文档](./docs/publishing.md) - 完整的发布文档
-- [发布前检查清单](./PRE_PUBLISH_CHECKLIST.md) - 发布前的检查项目
-- [贡献指南](./CONTRIBUTING.md) - 如何为项目做贡献
-- [GitHub Pages 设置](./GITHUB_PAGES_SETUP.md) - GitHub Pages 部署设置
+### 快速链接
+
+- [快速开始](./docs/guides/QUICK_START.md) - 3 步快速上手
+- [所有指南](./docs/guides/README.md) - 完整的指南索引
+- [文档结构](./docs/DOCUMENTATION.md) - 文档组织方式
+
+### 主要指南
+
+- [发布指南](./docs/guides/PUBLISHING.md) - npm 发布快速指南
+- [贡献指南](./docs/guides/CONTRIBUTING.md) - 如何为项目做贡献
+- [项目概览](./docs/guides/PROJECT_OVERVIEW.md) - 完整的项目概览
+
+### 设置与配置
+
+- [GitHub Pages 设置](./docs/guides/GITHUB_PAGES_SETUP.md) - GitHub Pages 部署设置
+- [npm 设置](./docs/guides/NPM_SETUP.md) - npm 配置指南
+
+### 详细文档
+
+- [API 参考](./docs/api.md) - 完整的 API 参考
+- [使用指南](./docs/guide.md) - 详细使用指南
+- [发布文档](./docs/publishing.md) - 完整的发布文档
 
 ## 🔗 相关链接
 
@@ -295,7 +307,7 @@ such-clipboard-monorepo/
 
 ## 🤝 贡献
 
-欢迎贡献！请阅读我们的[贡献指南](./CONTRIBUTING.md)了解：
+欢迎贡献！请阅读我们的[贡献指南](./docs/guides/CONTRIBUTING.md)了解：
 
 - 开发工作流程
 - 提交信息规范
