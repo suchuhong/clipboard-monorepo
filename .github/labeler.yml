@@ -1,0 +1,15 @@
+docs:
+  - docs/**
+
+storybook:
+  - packages/react-clipboard-lite/stories/**
+  - packages/react-clipboard-lite/.storybook/**
+
+library:
+  - packages/react-clipboard-lite/**
+
+demo:
+  - apps/vite-demo/**
+
+ci:
+  - .github/workflows/**

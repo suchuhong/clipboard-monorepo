@@ -1,0 +1,55 @@
+{
+  "name": "such-clipboard-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm -ws run build",
+    "test": "npm -ws run test",
+    "storybook": "npm -w @such/react-clipboard-lite run storybook",
+    "build-storybook": "npm -w @such/react-clipboard-lite run build-storybook",
+    "lint": "eslint . --ext .ts,.tsx,.js,.cjs,.mts,.cts",
+    "ci": "npm ci && npm run build && npm test",
+    "format": "prettier -w .",
+    "check:format": "prettier -c .",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
+    "prepare": "husky install",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:build:with-sb": "npm -w @such/react-clipboard-lite run build-storybook && vitepress build docs && node scripts/merge-storybook-into-docs.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.3.0",
+    "@changesets/cli": "^2.27.0",
+    "typescript": "^5.0.0",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "vitepress": "^1.3.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,cjs,mjs}": [
+      "eslint --fix",
+      "prettier -w"
+    ],
+    "*.{json,md,mdx,css,scss}": [
+      "prettier -w"
+    ]
+  }
+}
