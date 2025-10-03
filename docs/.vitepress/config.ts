@@ -4,7 +4,7 @@ export default defineConfig({
   title: "react-clipboard-lite",
   description: "Tiny React clipboard utilities",
   lang: "en-US",
-  base: "/",
+  base: "/clipboard-monorepo/",
   ignoreDeadLinks: [
     // Ignore storybook links as they are generated after docs build
     /^\/storybook\//,
@@ -33,6 +33,6 @@ export default defineConfig({
         ],
       },
     ],
-    socialLinks: [{ icon: "github", link: "https://github.com/such/such-clipboard-monorepo" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/suchuhong/clipboard-monorepo" }],
   },
 });

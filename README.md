@@ -60,6 +60,11 @@ pnpm --filter @such/react-clipboard-lite run test:watch
 
 查看 [发布指南](./PUBLISHING.md) 了解如何发布到 npm。
 
+**首次配置**：
+
+1. 更新 `.changeset/config.json` 中的仓库名称（如果需要 GitHub 链接）
+2. 在 GitHub 仓库添加 `NPM_TOKEN` Secret
+
 **快速发布**：
 
 ```bash
@@ -163,3 +168,11 @@ such-clipboard-monorepo/
 - **Formatting**: Prettier
 - **Documentation**: VitePress + Storybook
 - **CI/CD**: GitHub Actions
+
+## Links
+
+- [GitHub Repository](https://github.com/suchuhong/clipboard-monorepo)
+- [Documentation](https://suchuhong.github.io/clipboard-monorepo/)
+- [Storybook](https://suchuhong.github.io/clipboard-monorepo/storybook/)
+- [npm Package](https://www.npmjs.com/package/@such/react-clipboard-lite)
+- [Issues](https://github.com/suchuhong/clipboard-monorepo/issues)

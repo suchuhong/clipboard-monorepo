@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "such/such-clipboard-monorepo"
+      "repo": "suchuhong/clipboard-monorepo"
     }
   ],
   "commit": false,

@@ -115,4 +115,4 @@ For older browsers, ensure your app has appropriate polyfills or fallbacks.
 
 ## Examples
 
-Check out the [Storybook](/storybook/) for interactive examples and the [demo app](https://github.com/your-repo/apps/vite-demo) for a complete implementation.
+Check out the [Storybook](/storybook/) for interactive examples and the [demo app](https://github.com/suchuhong/clipboard-monorepo/tree/main/apps/vite-demo) for a complete implementation.

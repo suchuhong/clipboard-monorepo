@@ -119,6 +119,33 @@ git push --follow-tags
 
 ### 配置步骤
 
+#### 0. 配置仓库信息（可选）
+
+如果想在 CHANGELOG 中自动生成 GitHub 链接，需要配置正确的仓库名称。
+
+编辑 `.changeset/config.json`：
+
+```json
+{
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "your-username/your-repo-name"
+    }
+  ]
+}
+```
+
+将 `your-username/your-repo-name` 替换为实际的 GitHub 仓库路径（如 `facebook/react`）。
+
+如果不需要 GitHub 链接，可以使用默认配置：
+
+```json
+{
+  "changelog": "@changesets/cli/changelog"
+}
+```
+
 #### 1. 获取 npm Token
 
 1. 登录 [npmjs.com](https://www.npmjs.com)
