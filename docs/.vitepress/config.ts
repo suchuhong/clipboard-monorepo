@@ -1,36 +1,34 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: 'react-clipboard-lite',
-  description: 'Tiny React clipboard utilities',
-  lang: 'en-US',
-  base: '/',
+  title: "react-clipboard-lite",
+  description: "Tiny React clipboard utilities",
+  lang: "en-US",
+  base: "/",
   themeConfig: {
-        search: {
-          provider: 'algolia',
-          options: {
-            appId: process.env.DOCSEARCH_APP_ID || 'YOUR_APP_ID',
-            apiKey: process.env.DOCSEARCH_API_KEY || 'YOUR_SEARCH_API_KEY',
-            indexName: process.env.DOCSEARCH_INDEX || 'YOUR_INDEX_NAME'
-          }
-        },
+    search: {
+      provider: "algolia",
+      options: {
+        appId: process.env.DOCSEARCH_APP_ID || "YOUR_APP_ID",
+        apiKey: process.env.DOCSEARCH_API_KEY || "YOUR_SEARCH_API_KEY",
+        indexName: process.env.DOCSEARCH_INDEX || "YOUR_INDEX_NAME",
+      },
+    },
     nav: [
-      { text: 'Guide', link: '/guide' },
-      { text: 'API', link: '/api' },
-      { text: 'Storybook', link: '/storybook/' }
+      { text: "Guide", link: "/guide" },
+      { text: "API", link: "/api" },
+      { text: "Storybook", link: "/storybook/" },
     ],
     sidebar: [
       {
-        text: 'Docs',
+        text: "Docs",
         items: [
-          { text: 'Introduction', link: '/' },
-          { text: 'Guide', link: '/guide' },
-          { text: 'API', link: '/api' },
-        ]
-      }
+          { text: "Introduction", link: "/" },
+          { text: "Guide", link: "/guide" },
+          { text: "API", link: "/api" },
+        ],
+      },
     ],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/such/such-clipboard-monorepo' }
-    ]
-  }
-})
+    socialLinks: [{ icon: "github", link: "https://github.com/such/such-clipboard-monorepo" }],
+  },
+});

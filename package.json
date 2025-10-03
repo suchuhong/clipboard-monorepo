@@ -2,17 +2,14 @@
   "name": "such-clipboard-monorepo",
   "private": true,
   "version": "0.1.0",
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
+  "type": "module",
   "scripts": {
-    "build": "npm -ws run build",
-    "test": "npm -ws run test",
-    "storybook": "npm -w @such/react-clipboard-lite run storybook",
-    "build-storybook": "npm -w @such/react-clipboard-lite run build-storybook",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "storybook": "pnpm --filter @such/react-clipboard-lite run storybook",
+    "build-storybook": "pnpm --filter @such/react-clipboard-lite run build-storybook",
     "lint": "eslint . --ext .ts,.tsx,.js,.cjs,.mts,.cts",
-    "ci": "npm ci && npm run build && npm test",
+    "ci": "pnpm install --frozen-lockfile && pnpm run build && pnpm test",
     "format": "prettier -w .",
     "check:format": "prettier -c .",
     "changeset": "changeset",
@@ -22,17 +19,19 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "docs:build:with-sb": "npm -w @such/react-clipboard-lite run build-storybook && vitepress build docs && node scripts/merge-storybook-into-docs.mjs"
+    "docs:build:with-sb": "pnpm --filter @such/react-clipboard-lite run build-storybook && vitepress build docs && node scripts/merge-storybook-into-docs.mjs"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.0.0",
     "eslint": "^9.0.0",
+    "globals": "^15.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "eslint-plugin-react": "^7.34.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.3.0",
     "@changesets/cli": "^2.27.0",
