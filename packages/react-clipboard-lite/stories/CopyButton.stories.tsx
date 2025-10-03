@@ -4,7 +4,7 @@ import { CopyButton } from "../src/index";
 const meta = {
   title: "react-clipboard-lite/CopyButton",
   component: CopyButton,
-  args: { text: "npm i @such/react-clipboard-lite" },
+  args: { text: "npm i @such12138/react-clipboard-lite" },
 } satisfies Meta<typeof CopyButton>;
 
 export default meta;

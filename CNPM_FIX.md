@@ -40,7 +40,7 @@ pnpm login
 现在可以发布包了：
 
 ```bash
-pnpm --filter @such/react-clipboard-lite publish --access public
+pnpm --filter @such12138/react-clipboard-lite publish --access public
 ```
 
 ## 详细说明

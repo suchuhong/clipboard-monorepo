@@ -167,7 +167,7 @@ nrm use taobao
 **解决**：
 
 - 确认已登录：`npm whoami`
-- 检查包名是否可用：`npm view @such/react-clipboard-lite`
+- 检查包名是否可用：`npm view @such12138/react-clipboard-lite`
 - 首次发布 scoped 包需要 `--access public`
 
 ### 3. 发布失败：需要 OTP
@@ -238,10 +238,10 @@ npm config set registry https://registry.npmjs.org/
 npm login
 
 # 3. 构建
-pnpm --filter @such/react-clipboard-lite run build
+pnpm --filter @such12138/react-clipboard-lite run build
 
 # 4. 发布
-pnpm --filter @such/react-clipboard-lite publish --access public
+pnpm --filter @such12138/react-clipboard-lite publish --access public
 ```
 
 ## 相关链接

@@ -4,7 +4,7 @@
 
 ```
 404 Not Found - PUT https://registry.npmjs.org/@such%2freact-clipboard-lite
-'@such/react-clipboard-lite@0.1.0' is not in this registry.
+'@your-scope/react-clipboard-lite@0.1.0' is not in this registry.
 ```
 
 ## 原因
@@ -55,7 +55,7 @@ npm 的 scoped 包（`@scope/package`）中的 scope 必须是：
 
 2. **创建名为 `such` 的组织**
 
-3. **然后就可以发布 `@such/react-clipboard-lite`**
+3. **然后就可以发布到该组织下**
 
 ### 方案 3：使用无 scope 的包名
 

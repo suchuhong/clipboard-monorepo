@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CopyButton, CopyOnClick, useClipboard } from "@such/react-clipboard-lite";
+import { CopyButton, CopyOnClick, useClipboard } from "@such12138/react-clipboard-lite";
 
 export default function App() {
   const [txt, setTxt] = useState("Hello from react-clipboard-lite");

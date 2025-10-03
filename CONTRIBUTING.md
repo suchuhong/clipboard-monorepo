@@ -1,4 +1,4 @@
-# Contributing to @such/react-clipboard-lite
+# Contributing to @such12138/react-clipboard-lite
 
 Thank you for your interest in contributing! This guide will help you get started.
 
@@ -37,7 +37,7 @@ cd apps/vite-demo
 pnpm run dev
 
 # Watch mode for library builds
-pnpm --filter @such/react-clipboard-lite run dev
+pnpm --filter @such12138/react-clipboard-lite run dev
 ```
 
 ### Making Changes
@@ -76,7 +76,7 @@ pnpm run format
 pnpm test
 
 # Run tests in watch mode
-pnpm --filter @such/react-clipboard-lite run test:watch
+pnpm --filter @such12138/react-clipboard-lite run test:watch
 
 # Run E2E tests
 cd apps/vite-demo
@@ -90,7 +90,7 @@ pnpm run test:e2e
 pnpm run build
 
 # Build specific package
-pnpm --filter @such/react-clipboard-lite run build
+pnpm --filter @such12138/react-clipboard-lite run build
 ```
 
 ## Commit Guidelines

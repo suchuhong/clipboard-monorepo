@@ -2,7 +2,7 @@
 
 ## 当前问题
 
-包名 `@such/react-clipboard-lite` 无法发布，因为你没有 `@such` scope 的权限。
+包名 `@such12138/react-clipboard-lite` 是当前使用的包名。
 
 ## 解决方案
 
@@ -44,7 +44,7 @@ npm whoami
 
 ### 2.3 更新 package.json 中的脚本
 
-编辑根目录 `package.json`，将所有 `@such/react-clipboard-lite` 替换为 `@suchuhong/react-clipboard-lite`
+编辑根目录 `package.json`，将所有 `@such12138/react-clipboard-lite` 替换为新的包名
 
 ### 2.4 更新文档
 
@@ -64,8 +64,8 @@ npm whoami
 
 使用查找替换：
 
-- 查找：`@such/react-clipboard-lite`
-- 替换：`@suchuhong/react-clipboard-lite`
+- 查找：`@such12138/react-clipboard-lite`
+- 替换：新的包名（如 `@your-username/react-clipboard-lite`）
 
 ## 步骤 3：重新安装依赖
 
@@ -126,8 +126,8 @@ pnpm --filter @suchuhong/react-clipboard-lite publish --access public
 如果你确实想使用 `@such` scope：
 
 1. 访问 https://www.npmjs.com/org/create
-2. 创建名为 `such` 的组织
-3. 然后就可以发布 `@such/react-clipboard-lite`
+2. 创建你想要的组织名
+3. 然后就可以发布到该组织下
 
 **注意**：创建组织可能需要额外的验证或费用。
 

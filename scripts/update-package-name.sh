@@ -14,7 +14,7 @@ if [ -z "$1" ]; then
 fi
 
 NEW_SCOPE=$1
-OLD_NAME="@such/react-clipboard-lite"
+OLD_NAME="@such12138/react-clipboard-lite"
 NEW_NAME="@${NEW_SCOPE}/react-clipboard-lite"
 
 echo "🔄 更新包名..."
@@ -26,34 +26,34 @@ echo ""
 echo "📝 更新 package.json 文件..."
 
 # 库的 package.json
-sed -i.bak "s|\"name\": \"@such/react-clipboard-lite\"|\"name\": \"@${NEW_SCOPE}/react-clipboard-lite\"|g" packages/react-clipboard-lite/package.json
+sed -i.bak "s|\"name\": \"@such12138/react-clipboard-lite\"|\"name\": \"@${NEW_SCOPE}/react-clipboard-lite\"|g" packages/react-clipboard-lite/package.json
 
 # demo 的 package.json
-sed -i.bak "s|\"@such/react-clipboard-lite\": \"workspace:\*\"|\"@${NEW_SCOPE}/react-clipboard-lite\": \"workspace:*\"|g" apps/vite-demo/package.json
+sed -i.bak "s|\"@such12138/react-clipboard-lite\": \"workspace:\*\"|\"@${NEW_SCOPE}/react-clipboard-lite\": \"workspace:*\"|g" apps/vite-demo/package.json
 
 # 更新 README 文件
 echo "📝 更新 README 文件..."
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" README.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" README.zh-CN.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" packages/react-clipboard-lite/README.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" README.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" README.zh-CN.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" packages/react-clipboard-lite/README.md
 
 # 更新文档
 echo "📝 更新文档文件..."
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/index.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/guide.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/api.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/index.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/guide.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/api.md
 
 # 更新其他文档
 echo "📝 更新其他文档..."
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" PUBLISHING.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" QUICK_PUBLISH.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" PRE_PUBLISH_CHECKLIST.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" PROJECT_OVERVIEW.md
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/publishing.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" PUBLISHING.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" QUICK_PUBLISH.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" PRE_PUBLISH_CHECKLIST.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" PROJECT_OVERVIEW.md
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" docs/publishing.md
 
 # 更新 package.json 中的脚本
 echo "📝 更新脚本命令..."
-sed -i.bak "s|@such/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" package.json
+sed -i.bak "s|@such12138/react-clipboard-lite|@${NEW_SCOPE}/react-clipboard-lite|g" package.json
 
 # 删除备份文件
 echo "🧹 清理备份文件..."

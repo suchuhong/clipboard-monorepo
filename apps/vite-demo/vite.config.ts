@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@such/react-clipboard-lite": path.resolve(
+      "@such12138/react-clipboard-lite": path.resolve(
         __dirname,
         "../../packages/react-clipboard-lite/src/index.tsx"
       ),
