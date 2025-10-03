@@ -1,6 +1,6 @@
 {
   "name": "@such12138/react-clipboard-lite",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lightweight React components and hooks for clipboard operations",
   "keywords": [
     "react",
