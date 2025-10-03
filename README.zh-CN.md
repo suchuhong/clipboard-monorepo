@@ -58,16 +58,30 @@ pnpm --filter @such/react-clipboard-lite run test:watch
 
 ## 发布流程
 
-- **Changesets（版本管理与发布）**
-  - 创建变更集：`pnpm run changeset`（选择包、选择版本类型、填写说明）
-  - 合并到 `main` 分支后，Workflow 会自动创建**版本 PR** 或直接**发布**（需在仓库 Secrets 中配置 `NPM_TOKEN`）
-  - 手动发布：`pnpm run version-packages && pnpm run release`
+查看 [发布指南](./PUBLISHING.md) 了解如何发布到 npm。
 
-- **发布单个包**
+**快速发布**：
 
-  ```bash
-  pnpm --filter @such/react-clipboard-lite publish --access public
-  ```
+```bash
+# 1. 创建变更集
+pnpm run changeset
+
+# 2. 提交并推送
+git add . && git commit -m "chore: add changeset" && git push
+
+# 3. 合并自动创建的 PR（GitHub Actions 会自动发布）
+```
+
+**手动发布**：
+
+```bash
+pnpm run build
+pnpm run changeset
+pnpm run version-packages
+pnpm run release
+```
+
+详细文档：[docs/publishing.md](./docs/publishing.md)
 
 ## E2E 测试
 
